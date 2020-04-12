@@ -1,0 +1,99 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@chethanrao 
+chethanrao
+/
+SamplePrograms
+1
+0
+0
+ Code Issues 0 Pull requests 0 Actions Projects 0 Wiki Security Insights Settings
+SamplePrograms/OriginalProblems/Problems.txt
+@chethanrao chethanrao Update Problems.txt
+b9e54c2 4 hours ago
+78 lines (54 sloc)  2.98 KB
+  
+/*
+List of problems originally created  by me
+*/
+
+
+
+1) A median of a binary tree is defined as the average of elements at [depth/2,breadth/2-1],[depth/2,breadth/2+1] 
+if depth of tree is odd 
+and
+average of the elements at [depth/2-1,breadth/2-1],[depth/2+1,breadth/2-1],[depth/2-1,breadth/2+1] and [depth/2+1,breadth/2+1]
+if depth of tree is even.
+Given a complete binary tree...find the median?
+
+2) Shortest distance to a rotating target: A car is parked at one corner(left bottom) 
+of a matrix and a passenger is at another corner diagnolly opposite(right top) the matrix. 
+A car can move up or right .  
+The passenger rotates  around a square with side x.
+
+For every move of the car left or up....the passenger moves one block.
+Find the shortest time of the car to the passenger?
+
+3) Given a binary tree find sum of all the nodes in the sub tree of a target node.
+Given that all values of nodes are unique and there exists a target node with value target node.
+int binaryTree(TreeNode node,int targetNode)
+
+4)
+Given a binary tree find if sum of any subtree is equal to a given target sum.
+If such a sub tree exists return the root of the subtree.
+TreeNode binaryTree(TreeNode node,int targetSum)
+
+5) Given a set of rectangles with (x1,y1),(x2,y2),(x3,y3),(x4,y4)
+and a range (x5,x6) and (x7,x8) inclusive of the rectangles.
+return all the missing vertices of a rectangles in the range (x5,x6) and (x7,x8).
+
+6) If one draws a straight line through points (x1,y1) and (x2,y2) and cuts a balanced binary tree. 
+   Find the number of nodes in each cut part?
+Here node at position (x,y) is at height x from top and at position y from left most node of the tree at that height.
+All the adjacent nodes are of equal distance from each other.
+
+7) Traverse a tree in  the below order and print all the elements in the tree
+
+       4
+    3    7
+  2   6    9
+1   5   8    10
+
+8) find the number of islands in a tree which has 1s and 0s
+
+9) Given a n x m grid and a String of 4 characters. 
+Find the number of occurrences of the 4 characters in a square 
+with each vertex a character of a string clockwise or anti clockwise ?
+
+
+Example input:
+1)n x m grid:
+  a  b  t  e
+  c  q  r  m
+  s  n  p  o
+  g  t  k  z
+
+  bnoe
+
+
+  b , n , o , e occurs once in the grid at position [0,1]  [2,1]  [2,3]  [0,3] in anti-clockwise manner.
+
+10)
+In a frictionless billiards board having co-ordinates (0,0),(0,x),(x,0),(x,x) when a ball starts from position  (0,y) and strikes (y,0)...find the co-ordinates of the line at nth impact on the boundaries of the board.(Given the angle of incidence equal to angle of reflection.)
+
+11)
+In a matrix where each number represents height of the block at that square. find the maximum amount of water that can be trapped in between the matrix?
+
+12) 
+Cut a circular linked list into two single linkedlist such that both singly linked list have same sum.
+
+13) given a list of nodes remove nodes in that order and find the final number of unconnected trees that are obtained.
+follow up: find the number of unconnected trees at each step
+
+
