@@ -77,4 +77,53 @@ Cut a circular linked list into two single linkedlist such that both singly link
 13) given a list of nodes remove nodes in that order and find the final number of unconnected trees that are obtained.
 follow up: find the number of unconnected trees at each step
 
+14)
+
+/*
+
+Difficulty:Medium
+Given the array favoriteCompanies where favoriteCompanies[i] is the list of favorites companies for the ith person (indexed from 0).
+
+Return the indices of people whose list of favorite companies is not a subset of any other list of favorites companies. You must return the indices in increasing order.
+
+ 
+
+Example 1:
+
+Input: favoriteCompanies = [["leetcode","google","facebook"],["google","microsoft"],["google","facebook"],["google"],["amazon"]]
+Output: [0,1,4] 
+Explanation: 
+Person with index=2 has favoriteCompanies[2]=["google","facebook"] which is a subset of favoriteCompanies[0]=["leetcode","google","facebook"] corresponding to the person with index 0. 
+Person with index=3 has favoriteCompanies[3]=["google"] which is a subset of favoriteCompanies[0]=["leetcode","google","facebook"] and favoriteCompanies[1]=["google","microsoft"]. 
+Other lists of favorite companies are not a subset of another list, therefore, the answer is [0,1,4].
+Example 2:
+
+Input: favoriteCompanies = [["leetcode","google","facebook"],["leetcode","amazon"],["facebook","google"]]
+Output: [0,1] 
+Explanation: In this case favoriteCompanies[2]=["facebook","google"] is a subset of favoriteCompanies[0]=["leetcode","google","facebook"], therefore, the answer is [0,1].
+Example 3:
+
+Input: favoriteCompanies = [["leetcode"],["google"],["facebook"],["amazon"]]
+Output: [0,1,2,3]
+ 
+
+Constraints:
+
+1 <= favoriteCompanies.length <= 100
+1 <= favoriteCompanies[i].length <= 500
+1 <= favoriteCompanies[i][j].length <= 20
+All strings in favoriteCompanies[i] are distinct.
+All lists of favorite companies are distinct, that is, If we sort alphabetically each list then favoriteCompanies[i] != favoriteCompanies[j].
+All strings consist of lowercase English letters only.
+*/
+This was a leetcode problem from the contest
+The modification to the above problem would be if the favoritecompanies is not contained in the combined union of other sets.
+Then how will you approach the problem differently?
+Example:
+
+Input: favoriteCompanies = [["leetcode","google","facebook"],["leetcode","amazon"],["facebook","google"]]
+Output: [1]
+Here output 0 is not correct because combined list of other people's favorite movies is ["leetcode","amazon","facebook","google"]
+and this set contains the first set
+1 is correct because "amazon" is not contained in other people's favorite companies
 
