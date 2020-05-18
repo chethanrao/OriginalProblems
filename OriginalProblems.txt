@@ -117,8 +117,11 @@ All lists of favorite companies are distinct, that is, If we sort alphabetically
 All strings consist of lowercase English letters only.
 */
 This was a leetcode problem from the contest
-The modification to the above problem would be if the favoritecompanies is not contained in the combined union of other sets.
-Then how will you approach the problem differently?
+Modification for above problem:
+
+Return the indices of people whose list of favorite companies is not a subset of union of other list of favorites companies. You must return the indices in increasing order.
+
+
 Example:
 
 Input: favoriteCompanies = [["leetcode","google","facebook"],["leetcode","amazon"],["facebook","google"]]
@@ -126,4 +129,6 @@ Output: [1]
 Here output 0 is not correct because combined list of other people's favorite movies is ["leetcode","amazon","facebook","google"]
 and this set contains the first set
 1 is correct because "amazon" is not contained in other people's favorite companies
+This problem becomes very similar to find product of all elements in every position at itself problem.
+(https://leetcode.com/problems/product-of-array-except-self/)
 
