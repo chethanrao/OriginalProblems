@@ -132,3 +132,30 @@ and this set contains the first set
 This problem becomes very similar to find product of all elements in every position at itself problem.
 (https://leetcode.com/problems/product-of-array-except-self/)
 
+15)
+find a node in tree...then find its right node and find the right node in the subtree with the right node as root and so on until you find the last node and return the node?
+Example:
+               1
+            
+           2        3
+           
+       4    5     1     4
+                    3
+                       10
+                       
+   Example in the above tree : 
+   If i search for node 1 the program must return 10
+   
+   Reasoning:
+   1) right node of 1 is 3  
+   2) now we try to find the node 3 in subtree of node with root as 3
+   3) right node of 3 is 10
+                    
+                    
+                    
+       
+
+
+
+
+
