@@ -152,7 +152,9 @@ Example:
    3) right node of 3 is 10
                     
                     
-                    
+16) a) find the some of all the left most nodes of each level in the binary tree      
+    b) find the some of all the bottom most nodes in the binary tree
+    c) find the some of all the right most nodes at each level in the binary tree
        
 
 
